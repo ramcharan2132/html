@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<script>
+			function show()
+			{
+				var a = parseInt(window.prompt("Enter a value to reverse"));
+				var sum = 0;
+				while(a > 0){
+					var temp = a%10;
+					sum = (sum*10)+temp;
+					a = a/10;
+				}
+				document.show(sum);
+			}
+		</script>
+	</head>
+	<body onload = "show();"></body>
+</html>

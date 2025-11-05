@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Document Object Example</title>
+</head>
+<body>
+  <h2 id="head">Hello</h2>
+  <p id="para">This is a paragraph.</p>
+
+  <script>
+    
+    document.write("Title of page: " + document.title + "<br>");
+    document.write("URL of page: " + document.URL + "<br>");
+
+    
+    document.getElementById("head").style.color = "blue"; // change color
+    document.getElementById("para").innerHTML = "Text changed using document method!";
+  </script>
+</body>
+</html>
