@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array Object Example</title>
+</head>
+<body>
+  <h2>Array Object Demo</h2>
+  <p id="result"></p>
+
+  <script>
+    
+    var fruits = ["Apple", "Banana", "Mango"];
+
+    
+    var length = fruits.length;   // number of items
+
+    
+    fruits.push("Orange");        // add at end
+    fruits.unshift("Grapes");     // add at start
+    var last = fruits.pop();      // remove last
+    var first = fruits.shift();   // remove first
+    var joined = fruits.join(", "); // join into string
+
+    
+    document.getElementById("result").innerHTML =
+      "Array after operations: " + fruits + "<br>" +
+      "Length: " + length + "<br>" +
+      "Removed First: " + first + "<br>" +
+      "Removed Last: " + last + "<br>" +
+      "Joined Array: " + joined;
+  </script>
+</body>
+</html>

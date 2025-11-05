@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Regex: 8 Methods (Easy)</title>
+</head>
+<body>
+  <h2>Regex 8 Methods </h2>
+  <pre id="out"></pre>
+c
+  <script>
+    const text = "Cats, catfish and CAT lovers love cats!";
+    const re = /cat/gi;              
+    const out = [];
+
+    out.push("test(): " + re.test(text));
+
+    const execRe = new RegExp("cat", "gi");
+    const firstExec = execRe.exec(text);
+    out.push("exec(): " + (firstExec ? firstExec[0] + " at index " + firstExec.index : "no match"));
+
+    const matches = text.match(re);
+    out.push("match(): " + JSON.stringify(matches));
+
+    const ma = Array.from(text.matchAll(/cat/gi)).map(m => `${m[0]}@${m.index}`);
+    out.push("matchAll(): " + JSON.stringify(ma));
+
+    const firstIndex = text.search(/cat/i);
+    out.push("search(): " + firstIndex);
+
+   
+    const replacedOnce = text.replace(/cat/i, "dog");
+    const replacedAll = text.replace(/cat/gi, "dog");
+    out.push("replace() first: " + replacedOnce);
+    out.push("replace() all (with /g/): " + replacedAll);
+
+       const replacedAllMethod = text.replaceAll(/cat/ig, "puppy");
+    out.push("replaceAll(): " + replacedAllMethod);
+
+    const parts = text.split(/\s+and\s+/i); // split around " and "
+    out.push("split(): " + JSON.stringify(parts));
+
+    document.getElementById("out").textContent = out.join("\n");
+  </script>
+</body>
+</html>

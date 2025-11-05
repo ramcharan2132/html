@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head><title>Date 15 Methods</title></head>
+<body>
+<pre id="out"></pre>
+<script>
+let d = new Date();
+let out = [];
+
+out.push("Date: " + d.toString());
+out.push("getFullYear(): " + d.getFullYear());
+out.push("getMonth(): " + d.getMonth());   // 0=Jan
+out.push("getDate(): " + d.getDate());
+out.push("getDay(): " + d.getDay());       // 0=Sun
+out.push("getHours(): " + d.getHours());
+out.push("getMinutes(): " + d.getMinutes());
+out.push("getSeconds(): " + d.getSeconds());
+out.push("getMilliseconds(): " + d.getMilliseconds());
+out.push("getTime(): " + d.getTime());     // ms since 1970
+out.push("toDateString(): " + d.toDateString());
+out.push("toTimeString(): " + d.toTimeString());
+out.push("toLocaleDateString(): " + d.toLocaleDateString());
+out.push("toLocaleTimeString(): " + d.toLocaleTimeString());
+out.push("toUTCString(): " + d.toUTCString());
+
+document.getElementById("out").textContent = out.join("\n");
+</script>
+</body>
+</html>

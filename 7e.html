@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head><title>String 15 Methods</title></head>
+<body>
+<pre id="out"></pre>
+<script>
+let str = "  Hello JavaScript World  ";
+let out = [];
+
+// Property
+out.push("length: " + str.length);
+
+// Methods
+out.push("toUpperCase(): " + str.toUpperCase());
+out.push("toLowerCase(): " + str.toLowerCase());
+out.push("charAt(2): " + str.charAt(2));
+out.push("indexOf('Java'): " + str.indexOf("Java"));
+out.push("lastIndexOf('o'): " + str.lastIndexOf("o"));
+out.push("substring(2,7): " + str.substring(2,7));
+out.push("slice(-5): " + str.slice(-5));
+out.push("trim(): " + str.trim());
+out.push("replace('World','Everyone'): " + str.replace("World","Everyone"));
+out.push("replaceAll('o','0'): " + str.replaceAll("o","0"));
+out.push("split(' '): " + str.split(" "));
+out.push("concat('!!!'): " + str.concat("!!!"));
+out.push("includes('Java'): " + str.includes("Java"));
+out.push("startsWith('  He'): " + str.startsWith("  He"));
+out.push("endsWith('ld  '): " + str.endsWith("ld  "));
+
+document.getElementById("out").textContent = out.join("\n");
+</script>
+</body>
+</html>

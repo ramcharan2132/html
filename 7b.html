@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>Simple Window Object Example</title>
+</head>
+<body>
+  <h2>Window Object Demo</h2>
+  <p id="info"></p>
+
+  <script>
+        document.getElementById("info").innerHTML =
+      "Width: " + window.innerWidth + "<br>" +
+      "Height: " + window.innerHeight + "<br>" +
+      "URL: " + window.location.href;
+
+    
+    window.alert("Hello! This is an alert box.");
+    let answer = window.confirm("Do you like JavaScript?");
+    if(answer){
+      alert("You pressed OK");
+    }else{
+      alert("You pressed Cancel");
+    }
+  </script>
+</body>
+</html>

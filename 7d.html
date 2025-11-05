@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head><title>Math 15 Methods</title></head>
+<body>
+<pre id="out"></pre>
+<script>
+let out = [];
+
+// Properties
+out.push("PI: " + Math.PI);
+out.push("E: " + Math.E);
+
+// Methods
+out.push("round(4.6): " + Math.round(4.6));
+out.push("floor(4.9): " + Math.floor(4.9));
+out.push("ceil(4.1): " + Math.ceil(4.1));
+out.push("trunc(4.7): " + Math.trunc(4.7));
+out.push("pow(2,3): " + Math.pow(2,3));
+out.push("sqrt(25): " + Math.sqrt(25));
+out.push("abs(-8): " + Math.abs(-8));
+out.push("max(3,9,1): " + Math.max(3,9,1));
+out.push("min(3,9,1): " + Math.min(3,9,1));
+out.push("random(): " + Math.random());
+out.push("sin(0): " + Math.sin(0));
+out.push("cos(0): " + Math.cos(0));
+out.push("log(1): " + Math.log(1));
+out.push("exp(1): " + Math.exp(1));
+
+document.getElementById("out").textContent = out.join("\n");
+</script>
+</body>
+</html>
